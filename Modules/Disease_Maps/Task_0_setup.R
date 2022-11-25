@@ -1,8 +1,8 @@
 ##################################################
 ## Project: Reproducible exploration and analysis of disease maps, 5th of December 2022
-## Script purpose: Access programmatically the Dementia Disease Map on the MINERVA Platform
+## Script purpose: Access programmatically the COVID-19 Disease Map on the MINERVA Platform
 ##                 Task 0: Install necessary packages and request for exploration and analysis of disease map
-## Date: 03.11.2022
+## Date: 25.11.2022
 ## Author: Marek Ostaszewski
 ##################################################
 
@@ -13,7 +13,9 @@ if(length(new.packages)) install.packages(new.packages, repos='http://cran.us.r-
 
 
 ### Load the 'minervar' package
-devtools::install_git(url = "https://gitlab.lcsb.uni.lu/minerva/minervar")
+if(!("minervar" %in% installed.packages()[,"Package"])) {
+  devtools::install_git(url = "https://gitlab.lcsb.uni.lu/minerva/minervar")
+}
 
 ### Get the contents of the an example disease map
 test <- minervar::get_map_components("https://synapsemap.lcsb.uni.lu/minerva/api/")
