@@ -21,7 +21,8 @@ if(packageVersion("minervar") < "0.8.6") {
 ### Load the bioentities from the map
 map <- "https://covid19map.elixir-luxembourg.org/minerva/api/"
 components <- minervar::get_map_components(map)
-bioentities <- components$map_elements[[2]]
+ifn_index <- which(components$models$name == "Interferon 1 pathway")
+bioentities <- components$map_elements[[ifn_index]]
 list_overlays_api_call <- paste0(map, "projects/", minervar::get_default_project(map), "/overlays/")
 get_overlay_api_call <- paste0(map, "projects/", minervar::get_default_project(map), "/overlays/", "446:downloadSource")
 ###-------------------------------------------------------------------
