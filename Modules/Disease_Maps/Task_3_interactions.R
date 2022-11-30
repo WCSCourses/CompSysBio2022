@@ -1,8 +1,8 @@
 ##################################################
-## Project: Reproducible exploration and analysis of disease maps, 30 August 2022 
-## Script purpose: Access programmatically the SYSCID Disease Map on the MINERVA Platform
+## Project: Reproducible exploration and analysis of disease maps, 5th of December 2022
+## Script purpose: Access programmatically the COVID-19 Disease Map on the MINERVA Platform
 ##                 Task 3: Interactions of bioentities
-## Date: 28.08.2022
+## Date: 25.11.2022
 ## Author: Marek Ostaszewski
 ##################################################
 

@@ -69,7 +69,7 @@ list_of_overlays <- jsonlite::fromJSON(minervar::ask_GET(list_overlays_api_call)
 ### To get an overlay, we use the following MINERVA API call:
 ### 'https://<map api>/projects/<project id>/overlays/<idObject>:downloadSource'
 
-get_overlay_api_call <- paste0(map, "projects/", minervar::get_default_project(map), "/overlays/", "446:downloadSource")
+get_overlay_api_call <- paste0(map, "projects/", minervar::get_default_project(map), "/overlays/", "557:downloadSource")
 overlay_data <- minervar::ask_GET(get_overlay_api_call)
 
 ### This is not a JSON structure, we need to parse it; '\t' are field separators, '\n' are line separators

@@ -24,7 +24,7 @@ components <- minervar::get_map_components(map)
 ifn_index <- which(components$models$name == "Interferon 1 pathway")
 bioentities <- components$map_elements[[ifn_index]]
 list_overlays_api_call <- paste0(map, "projects/", minervar::get_default_project(map), "/overlays/")
-get_overlay_api_call <- paste0(map, "projects/", minervar::get_default_project(map), "/overlays/", "446:downloadSource")
+get_overlay_api_call <- paste0(map, "projects/", minervar::get_default_project(map), "/overlays/", "557:downloadSource")
 ###-------------------------------------------------------------------
 
 ### To make more specific disease map queries, let's create an API stub for this project
@@ -58,3 +58,4 @@ jsonlite::write_json(example_drugs_json, path = "example_drug.json")
 ###########
 ### Task 2.3: For identifiers from Task 1 (three overlay hits), which one has the highest number of drugs targeting it?
 ###########
+
