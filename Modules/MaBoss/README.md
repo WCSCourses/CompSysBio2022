@@ -17,6 +17,8 @@ This first practical uses pyMaBoSS, the python library of MaBoSS, accessible in 
 
 A brief description of library, as well as the different exercises are available in [These slides](https://github.com/WCSCourses/CompSysBio2022/blob/main/Modules/MaBoss/pymaboss.pdf).
 
-The model to be simulated is composed of a BND file (model) and a CFG file (config), and will need to be loaded in the notebook.
-- [Montagud2022_Prostate_Cancer.bnd](https://github.com/WCSCourses/CompSysBio2022/blob/main/Modules/MaBoss/models/Montagud2022_Prostate_Cancer.bnd)
-- [Montagud2022_Prostate_Cancer.cfg](https://github.com/WCSCourses/CompSysBio2022/blob/main/Modules/MaBoss/models/Montagud2022_Prostate_Cancer.cfg)
+To load the notebook, run : 
+```
+   cd ~/course_data/Modules/MaBoss
+   colomoto-docker -V next --bind . 
+```
