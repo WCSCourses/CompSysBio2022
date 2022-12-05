@@ -47,7 +47,7 @@ selected_ifn_HGNCs <- dplyr::filter(ifn_HGNCs, startsWith(resource, "IFN")) ### 
 
 ### Using these results we can find identifiers of these elements and create a search URL for them
 minervar::create_search_url(mnv_url = "https://covid19map.elixir-luxembourg.org/minerva/",
-                            elements = ifn_HGNCs$id)
+                            elements = selected_ifn_HGNCs$id)
 
 ### Example 1.2: Data overlays
 ### Let's access data overlays in COVID-19 Disease Map
