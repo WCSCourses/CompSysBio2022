@@ -23,6 +23,6 @@ A brief description of library, as well as the different exercises are available
 
 To load the notebook, run : 
 ```
-   cd ~/course_data/Modules/MaBoss
+   cd ~/manual/Modules/MaBoss
    colomoto-docker -V next --bind . 
 ```
