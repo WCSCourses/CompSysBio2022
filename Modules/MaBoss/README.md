@@ -1,5 +1,9 @@
 # CoLoMoTo Notebook and MaBoSS Practicals
 
+## MaBoSS Introduction
+
+The slides of the introduction lecture are available [here](https://github.com/WCSCourses/CompSysBio2022/blob/main/Modules/MaBoss/intro.pdf).
+
 ## Using MaBoSS with WebMaBoSS
 
 This first practical uses WebMaBoSS, the web interface for MaBoSS, accessible at https://maboss.curie.fr/WebMaBoSS.
